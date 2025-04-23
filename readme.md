@@ -1,6 +1,6 @@
-# HDI_Template_20
+# HDI_SetDataSourceFormula
 
-Description (4D 20 Rx)
+Use the new commands: OBJECT SET DATA SOURCE FORMULA and OBJECT Get data source formula (4D 20 R10)
 
 Find more information on the [blog post](https://blog.4d.com/).
 
