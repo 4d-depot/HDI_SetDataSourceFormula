@@ -1,8 +1,8 @@
 {
 	"destination": "detailScreen",
-	"windowMinWidth": 800,
+	"windowMinWidth": 960,
 	"windowMaxWidth": 32000,
-	"windowMinHeight": 540,
+	"windowMinHeight": 640,
 	"windowMaxHeight": 32000,
 	"width": 960,
 	"height": 640,
@@ -117,8 +117,8 @@
 					"top": 80,
 					"left": 40,
 					"width": 583,
-					"height": 452,
-					"sizingY": "fixed",
+					"height": 470,
+					"sizingY": "grow",
 					"dataSource": "Infos[1].Description",
 					"focusable": false,
 					"fill": "transparent",
@@ -237,7 +237,8 @@
 					"left": 643,
 					"width": 64,
 					"height": 64,
-					"picture": "Images/ArrowRightBottom.png"
+					"picture": "Images/ArrowRightBottom.png",
+					"sizingX": "move"
 				},
 				"Static Picture3": {
 					"type": "picture",
@@ -274,7 +275,7 @@
 					"class": "description",
 					"right": 920
 				},
-				"Button": {
+				"btnPerson": {
 					"type": "button",
 					"text": "Person",
 					"top": 240,
@@ -284,19 +285,19 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button.4dm"
+					"method": "ObjectMethods/btnPerson.4dm"
 				},
 				"Input": {
 					"type": "input",
-					"left": 780,
-					"top": 180,
+					"left": 760,
+					"top": 200,
 					"width": 142,
 					"height": 17,
 					"dataSource": "Form:C1466.currentItem.ID",
 					"visibility": "hidden",
 					"sizingX": "move"
 				},
-				"Button1": {
+				"btnCreateInputs": {
 					"type": "button",
 					"text": "Create",
 					"top": 400,
@@ -306,13 +307,13 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button1.4dm"
+					"method": "ObjectMethods/btnCreateInputs.4dm"
 				},
 				"Label": {
 					"type": "text",
 					"text": "Model",
-					"top": 180,
-					"left": 679,
+					"top": 200,
+					"left": 659,
 					"width": 94,
 					"height": 16,
 					"visibility": "hidden",
@@ -320,7 +321,7 @@
 				},
 				"ListBox": {
 					"type": "listbox",
-					"left": 290,
+					"left": 250,
 					"top": 210,
 					"width": 364,
 					"height": 316,
@@ -332,13 +333,13 @@
 					],
 					"listboxType": "collection",
 					"currentItemSource": "Form:C1466.currentItem",
-					"dataSource": "Form:C1466.data",
 					"lockedColumnCount": 0,
 					"sizingX": "grow",
 					"sizingY": "grow",
+					"dataSource": "Form:C1466.data",
 					"columns": []
 				},
-				"Button2": {
+				"btnBook": {
 					"type": "button",
 					"text": "Book",
 					"top": 240,
@@ -348,9 +349,9 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button2.4dm"
+					"method": "ObjectMethods/btnBook.4dm"
 				},
-				"Button3": {
+				"btnCreateListbox": {
 					"type": "button",
 					"text": "Create",
 					"top": 320,
@@ -360,11 +361,11 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button3.4dm"
+					"method": "ObjectMethods/btnCreateListbox.4dm"
 				},
 				"Text": {
 					"type": "text",
-					"text": "1 - Select Data Source:",
+					"text": "1 - Set Data Source:",
 					"top": 210,
 					"left": 50,
 					"width": 206,
@@ -373,7 +374,7 @@
 				},
 				"Text1": {
 					"type": "text",
-					"text": "2 - Create Listbox",
+					"text": "2 - Create Listbox columns",
 					"top": 290,
 					"left": 50,
 					"width": 206,
@@ -388,6 +389,17 @@
 					"width": 206,
 					"height": 16,
 					"fontWeight": "bold"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 210,
+					"left": 640,
+					"width": 280,
+					"height": 316,
+					"fill": "transparent",
+					"stroke": "#c0c0c0",
+					"sizingX": "move",
+					"sizingY": "grow"
 				}
 			}
 		},
@@ -441,5 +453,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 431
+	"geometryStamp": 457
 }

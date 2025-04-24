@@ -34,7 +34,8 @@ For each ($item; Form:C1466.attributes)
 	OBJECT SET PLACEHOLDER:C1295(*; "Input_"+String:C10($index); $item)
 	
 	// Set the datasource formula to the input
-	$formula:=Formula from string:C1601("Form.currentItem[\""+$item+"\"]")
+	//$formula:=Formula from string("Form.currentItem[\""+$item+"\"]")
+	$formula:=Formula from string:C1601("Form.currentItem."+$item)
 	OBJECT SET DATA SOURCE FORMULA:C1851(*; "Input_"+String:C10($index); $formula)
 End for each 
 
