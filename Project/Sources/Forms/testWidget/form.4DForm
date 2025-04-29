@@ -522,11 +522,43 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button15.4dm"
+				},
+				"Button16": {
+					"type": "button",
+					"text": "Clear",
+					"top": 115,
+					"left": 810,
+					"width": 76,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button16.4dm"
+				},
+				"Button17": {
+					"type": "button",
+					"text": "Clear",
+					"top": 135,
+					"left": 277,
+					"width": 98,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button17.4dm"
+				},
+				"Input": {
+					"type": "input",
+					"left": 804,
+					"top": 191,
+					"width": 67,
+					"height": 17,
+					"dataSource": "Form:C1466.currentItemPos"
 				}
 			}
 		}
 	],
-	"geometryStamp": 777,
+	"geometryStamp": 793,
 	"method": "method.4dm",
 	"editor": {
 		"groups": {

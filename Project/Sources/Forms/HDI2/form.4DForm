@@ -89,9 +89,9 @@
 				"information": {
 					"type": "input",
 					"top": 80,
-					"left": 80,
-					"width": 800,
-					"height": 480,
+					"left": 40,
+					"width": 883,
+					"height": 470,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "Infos[0].Description",
@@ -332,11 +332,9 @@
 						"onSelectionChange"
 					],
 					"listboxType": "collection",
-					"currentItemSource": "Form:C1466.currentItem",
 					"lockedColumnCount": 0,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"dataSource": "Form:C1466.data",
 					"columns": []
 				},
 				"btnBook": {
@@ -453,5 +451,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 457
+	"geometryStamp": 459
 }
