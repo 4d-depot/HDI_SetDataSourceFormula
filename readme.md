@@ -2,7 +2,7 @@
 
 Use the new commands: OBJECT SET DATA SOURCE FORMULA and OBJECT Get data source formula (4D 20 R10)
 
-Find more information on the [blog post]([https://blog.4d.com/](https://blog.4d.com/building-forms-on-the-fly-with-new-data-source-commands/)).
+Find more information on the [blog post](https://blog.4d.com/building-forms-on-the-fly-with-new-data-source-commands/).
 
 ## Installing and Using a 4D Project
 
